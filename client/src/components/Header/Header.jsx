@@ -2,9 +2,9 @@ import React from "react";
 import Nav from "./Nav/Nav";
 
 const Header = () => {
-  return <div>
+  return <header className="header">
     <Nav />
-  </div>;
+  </header>;
 };
 
 export default Header;

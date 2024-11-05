@@ -1,0 +1,9 @@
+@import "../utils/variables.scss";
+
+.header{
+    min-height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $mint-cream;
+}
