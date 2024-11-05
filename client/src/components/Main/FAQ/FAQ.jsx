@@ -1,6 +1,5 @@
 import React from "react";
-import CardFAQ from "./CardFAQ"; 
-import './../../../styles/components/_FAQ.scss';
+import CardFAQ from "./CardFAQ";
 
 const FAQ = () => {
   return (
