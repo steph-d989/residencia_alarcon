@@ -1,5 +1,14 @@
 import React from "react";
 import image1 from "../../../../src/assets/residencia.jpg";
+import image2 from "../../../../src/assets/002-foto resi 9.png";
+import image3 from "../../../../src/assets/003-foto resi 5 nuevo.png";
+import image4 from "../../../../src/assets/004-foto resi 4.png";
+import image5 from "../../../../src/assets/006-foto resi 2.png";
+import image6 from "../../../../src/assets/007-foto resi 3.png";
+import image7 from "../../../../src/assets/008-foto resi 6.png";
+import image8 from "../../../../src/assets/009-foto resi 7.png";
+import image9 from "../../../../src/assets/010-foto resi 8.png";
+
 
 const Gallery = () => {
   const images = [
@@ -11,35 +20,56 @@ const Gallery = () => {
       interval: 100,
     },
     {
-      src: image1,
+      src: image2,
       alt: "Segunda imagen",
       label: "Segunda imagen",
       description: "Abuelita feliz 2",
       interval: 100,
     },
     {
-      src: image1,
+      src: image3,
       alt: "Tercera imagen",
       label: "Tercera imagen",
       description: "Abuelita feliz 3",
       interval: 100,
     },
     {
-      src: image1,
+      src: image4,
       alt: "Cuarta imagen",
       label: "Cuarta imagen",
       description: "Abuelita feliz 4",
       interval: 100,
     },
     {
-      src: image1,
+      src: image5,
       alt: "Quinta imagen",
       label: "Quinta imagen",
       description: "Abuelita feliz 5",
       interval: 100,
     },
     {
-      src: image1,
+      src: image6,
+      alt: "Sexta imagen",
+      label: "Sexta imagen",
+      description: "Abuelita feliz 6",
+      interval: 100,
+    },
+    {
+      src: image7,
+      alt: "Sexta imagen",
+      label: "Sexta imagen",
+      description: "Abuelita feliz 6",
+      interval: 100,
+    },
+    {
+      src: image8,
+      alt: "Sexta imagen",
+      label: "Sexta imagen",
+      description: "Abuelita feliz 6",
+      interval: 100,
+    },
+    {
+      src: image9,
       alt: "Sexta imagen",
       label: "Sexta imagen",
       description: "Abuelita feliz 6",

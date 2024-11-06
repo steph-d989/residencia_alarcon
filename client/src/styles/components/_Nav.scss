@@ -1,1 +1,72 @@
 @import "../utils/variables.scss";
+
+.navbar {
+    padding: 1rem 0;
+  
+    .brand-container {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+  
+      .navbar-logo {
+        height: 50px;
+        width: auto;
+        object-fit: contain;
+      }
+  
+      .brand-name {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #2c3e50;
+      }
+    }
+  
+    .nav-links {
+      gap: 1rem;
+  
+      a {
+        color: #2c3e50;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        transition: all 0.3s ease;
+        text-decoration: none;
+  
+        &:hover {
+          color: #3498db;
+        }
+  
+        &.active {
+          color: #3498db;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  
+  // Responsive styles
+  @media (max-width: 991px) {
+    .navbar {
+      .brand-container {
+        .navbar-logo {
+          height: 40px;
+        }
+  
+        .brand-name {
+          font-size: 1.2rem;
+        }
+      }
+  
+      .nav-links {
+        margin-top: 1rem;
+        gap: 0;
+  
+        a {
+          padding: 0.75rem 0;
+          
+          &:hover {
+            background-color: #f8f9fa;
+          }
+        }
+      }
+    }
+  }
