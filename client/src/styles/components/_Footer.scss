@@ -5,75 +5,74 @@
     background-color: $mint-cream;
     color: $blueish-black;
     padding: 2rem 0;
+    margin-top: auto;
 
     .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-
-        @media (min-width: 768px) {
-            flex-direction: row;
-        }
-    }
-
-    .social-links {
-        display: flex;
-        margin-bottom: 1.5rem;
-
-        @media (min-width: 768px) {
-            margin-bottom: 0;
-        }
-
-        li {
-            margin-right: 1rem;
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1.5rem;
 
             a {
-                color: $blueish-black;
-                transition: color 0.3s;
+                color: #6c757d;
+                font-size: 1.25rem;
+                transition: color 0.3s ease;
 
                 &:hover {
-                    color: #ccc;
+                    &.facebook {
+                        color: #3b5998;
+                    }
+
+                    &.twitter {
+                        color: #1da1f2;
+                    }
+
+                    &.instagram {
+                        color: #e1306c;
+                    }
+
+                    &.linkedin {
+                        color: #0077b5;
+                    }
                 }
             }
         }
-    }
 
-    .legal-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 1.5rem;
-
-        @media (min-width: 768px) {
-            align-items: flex-start;
-            margin-bottom: 0;
-        }
-
-        li {
-            margin-bottom: 0.5rem;
+        .legal-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1.5rem;
 
             a {
-                color: $blueish-black;
-                transition: color 0.3s;
+                color: #6c757d;
+                text-decoration: none;
+                transition: color 0.3s ease;
 
                 &:hover {
-                    color: #ccc;
+                    color: #212529;
                 }
             }
         }
-    }
 
-    .slogan-and-signature {
-        text-align: center;
+        .slogan-and-signature {
+            text-align: center;
 
-        @media (min-width: 768px) {
-            text-align: right;
-        }
+            .slogan {
+                font-weight: 500;
+                color: #495057;
+                margin-bottom: 0.5rem;
+            }
 
-        p {
-            color: $blueish-black;
-            margin-bottom: 0.5rem;
+            .signature {
+                color: #6c757d;
+                font-size: 0.875rem;
+            }
         }
     }
 }
