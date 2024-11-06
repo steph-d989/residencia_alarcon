@@ -9,7 +9,7 @@ const Home = () => {
     <article>
       <h3>Bienvenid@ a Residencia Alarcón</h3>
       <p>
-        Posiblemente, la mejor residencia para mayores en Alarcón
+        Posiblemente, la mejor residencia para mayores en Pozuelo de Alarcón
       </p>
     </article>
     <article>
