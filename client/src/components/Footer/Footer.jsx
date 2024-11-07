@@ -72,7 +72,10 @@ const Footer = () => {
             Cuidando a nuestros mayores con dedicación y cariño
           </p>
           <p className="signature">
-            Desarrollado por Stephani Damiani & Edu Fatou © 2024
+            Desarrollado por Stephani Damiani & Edu Fatou
+          </p>
+          <p className="signature">
+            © 2024
           </p>
         </div>
       </Container>

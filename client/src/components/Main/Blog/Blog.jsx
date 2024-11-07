@@ -103,7 +103,7 @@ const Blog = () => {
                     <span className="author">{post.author}</span>
                     <span className="read-time">{post.readTime}</span>
                   </div>
-                  <Button variant="outline-primary" className="read-more-btn">
+                  <Button  className="read-more-btn">
                     Leer más
                   </Button>
                 </Card.Body>

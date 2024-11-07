@@ -1,10 +1,12 @@
+@import "../utils/variables.scss";
+
 .blog-page {
-//    padding: 4rem 0;
+
     background-color: #f8f9fa;
     
     .blog-header {
       text-align: center;
-      //margin-bottom: 3rem;
+
   
       h1 {
         text-align: center;
@@ -34,7 +36,7 @@
         border-radius: 4px;
         
         &:focus {
-          border-color: #3498db;
+          border-color: $color2;
           box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
         }
       }
@@ -117,10 +119,10 @@
             width: 100%;
             padding: 0.75rem;
             border-color: #3498db;
-            color: #3498db;
+            color: black;
             
             &:hover {
-              background-color: #3498db;
+              background-color: $color2;
               color: white;
             }
           }
