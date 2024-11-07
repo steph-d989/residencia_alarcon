@@ -1,2 +1,5 @@
-/*/*.js
+/* 
+  Content-Type: text/html; charset=UTF-8
+
+/assets/*.js
   Content-Type: application/javascript
