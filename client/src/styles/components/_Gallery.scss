@@ -1,7 +1,9 @@
+@import "../utils/variables.scss";
+
 .carousel-caption h5,
 .carousel-caption p {
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
-  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.9);
+  color: darken($mint-cream, 80%);
 }
 
 .carousel,

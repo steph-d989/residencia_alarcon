@@ -29,7 +29,7 @@
     }
   
     .service-title {
-      color: #0066cc;
+      color:  darken($mint-cream, 80%);
       font-size: 1.5rem;
       margin-bottom: 1rem;
       font-weight: 600;
@@ -54,7 +54,7 @@
   
         &:before {
           content: "•";
-          color: #0066cc;
+          color: darken($mint-cream, 80%);
           position: absolute;
           left: 0;
           font-size: 1.2rem;
