@@ -26,7 +26,8 @@ const Home = () => {
           necesidades y deseos sean atendidos.</p>
         <p>En Residencia Alarcón, cada día es una oportunidad para celebrar la vida y fomentar el respeto y la compasión.
           Te invitamos a conocernos y a descubrir cómo podemos contribuir a la calidad de vida de tus seres queridos.
-</p>
+        </p>
+        <h2>Lo que piensan nuestros huespedes</h2>
       </section>
 
       <section className="indicators">
