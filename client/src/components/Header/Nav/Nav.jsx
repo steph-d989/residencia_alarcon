@@ -27,7 +27,7 @@ const Nav = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Navigation className="ms-auto nav-links">
-            <Navigation.Link as={Link} to="/" onClick={closeNav}>Nosotros</Navigation.Link>
+            <Navigation.Link as={Link} to="/nosotros" onClick={closeNav}>Nosotros</Navigation.Link>
             <Navigation.Link as={Link} to="/servicios" onClick={closeNav}>Servicios</Navigation.Link>
             <Navigation.Link as={Link} to="/galería" onClick={closeNav}>Galería</Navigation.Link>
             <Navigation.Link as={Link} to="/blog" onClick={closeNav}>Blog</Navigation.Link>
