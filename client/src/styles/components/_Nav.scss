@@ -41,11 +41,11 @@
         text-decoration: none;
   
         &:hover {
-          color: #3498db;
+          color: darken($mint-cream,70%);
         }
   
         &.active {
-          color: #3498db;
+          color: darken($mint-cream,70%);
           font-weight: 600;
         }
       }
