@@ -1,23 +1,111 @@
-@import "../utils/variables.scss";
+.polaroid-gallery {
+  display: grid;
+  margin-top: 60px;
+  grid-template-columns: 1fr; // Móvil: una imagen por fila
+  gap: 20px;
+  padding: 20px;
 
-.carousel-caption h5,
-.carousel-caption p {
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.9);
-  //color: darken($mint-cream, 80%);
-  font-weight: 600;
-  color: black
+  .polaroid-item {
+    position: relative;
+    width: 100%; // Ancho completo en móvil
+    max-width: 400px; // Tamaño máximo en pantallas grandes
+    margin: 0 auto; // Centrado
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0.2s ease;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+
+    /* Alternativa de hover en móvil: al hacer clic, simula el hover */
+    &:active {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Hover en pantallas grandes */
+    @media (min-width: 768px) {
+      &:hover {
+        transform: scale(1.1) rotate(-2deg); // Leve rotación y escalado
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4); // Sombra más profunda
+        z-index: 10; // Coloca la polaroid al frente
+      }
+    }
+
+    /* Efecto de clip visual en la parte superior */
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 10px;
+      background-color: #c8ccd4;
+      border-radius: 4px 4px 0 0;
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+      transition: transform 0.3s ease, filter 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+      @media (min-width: 768px) {
+        &:hover {
+          transform: scale(1.05); // Solo crece un poco al hacer hover
+        }
+      }
+    }
+
+    /* Desenfoque de fondo sutil al hacer hover */
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+     transition: opacity 0.3s ease;
+      opacity: 0;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      margin-top: 10px;
+      font-family: "Arial", sans-serif;
+      font-weight: 500;
+      line-height: 1.5;
+      opacity: 1;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    &:hover p {
+      opacity: 0.9;
+      transform: translateY(-5px);
+    }
+  }
 }
 
-.carousel,
-.carousel-inner {
-  height: 90vh;
+/* Ajustes en pantallas medianas y grandes */
+@media (min-width: 768px) {
+  .polaroid-gallery {
+    grid-template-columns: repeat(2, 1fr); // Dos columnas en tabletas
+  }
 }
 
-.carousel-item {
-  height: 100%;
-}
-
-.carousel img {
-  object-fit: cover;
-  height: 100%;
+@media (min-width: 1024px) {
+  .polaroid-gallery {
+    grid-template-columns: repeat(3, 1fr); // Tres columnas en pantallas grandes
+  }
 }
