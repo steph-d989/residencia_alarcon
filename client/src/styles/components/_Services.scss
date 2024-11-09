@@ -1,7 +1,7 @@
 .services-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0 2rem;
   
     .services-main-title {
       text-align: center;
@@ -31,7 +31,6 @@
     .service-title {
       color:  darken($mint-cream, 80%);
       font-size: 1.5rem;
-      margin-bottom: 1rem;
       font-weight: 600;
     }
   
