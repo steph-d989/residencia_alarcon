@@ -8,13 +8,15 @@ const Home = () => {
       <Container>
         <Row className="justify-content-center align-items-center h-100">
           <Col md={8} className="text-center">
-            <h1 className="home-title">Bienvenidos a Residencia Alarcón</h1>
-            <p className="home-description">
-              Un hogar cálido y acogedor para nuestros residentes mayores.
-            </p>
-            <p className="home-description">
-              Donde cada día es una oportunidad para celebrar la vida.
-            </p>
+            <div className="text-background">
+              <h1 className="home-title">Bienvenidos a Residencia Alarcón</h1>
+              <p className="home-description">
+                Un hogar cálido y acogedor para nuestros residentes mayores.
+              </p>
+              <p className="home-description">
+                Donde cada día es una oportunidad para celebrar la vida.
+              </p>
+            </div>
           </Col>
         </Row>
       </Container>

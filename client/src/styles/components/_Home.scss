@@ -4,37 +4,48 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: black;
+  color: white;
+  text-align: center;
   overflow: hidden;
 
+  /* Fondo de imagen */
   &-bg {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../assets/narissa-de-villiers-WmtpJcAPMco-unsplash.jpg');
+    background-image: url('../assets/Sobrecarga-en-el-cuidador-a.jpg');
     background-size: cover;
     background-position: center;
-    filter: brightness(0.6);
-    z-index: -1;
+    z-index: -2;
   }
 
+  /* Franja translúcida más oscura y que ocupa todo el ancho */
+  .text-background {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.1); /* Fondo oscuro y translúcido */
+    backdrop-filter: blur(5px); /* Efecto de desenfoque */
+  }
+
+  /* Estilos para el título */
   &-title {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    text-shadow: 
-      0 0 20px rgba(255, 255, 255, 0.9),
-      0 0 30px rgba(255, 255, 255, 0.7),
-      0 0 40px rgba(255, 255, 255, 0.5);
+    font-size: 4rem;
+    font-weight: 500; /* Peso más ligero */
+    margin-bottom: 2rem; /* Separación mayor entre frases */
+    color: white;
   }
 
+  /* Estilos para las descripciones */
   &-description {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    text-shadow: 
-      0 0 10px rgba(255, 255, 255, 0.8),
-      0 0 20px rgba(255, 255, 255, 0.6),
-      0 0 30px rgba(255, 255, 255, 0.4);
+    font-size: 1.25rem;
+    margin: 0;
+    color: white;
+    line-height: 1.6;
   }
 }
