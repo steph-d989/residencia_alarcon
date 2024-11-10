@@ -7,9 +7,9 @@ import Gallery from "./Gallery/Gallery";
 import FAQ from "./FAQ/FAQ";
 import Contact from "./Contact/Contact";
 import Team from "./Team/Team";
-// import CookiesPolicy from "../Footer/CookiesPolicy";
-// import PrivacyPolicy from "../Footer/PrivacyPolicy";
-// import LegalAgreement from "../Footer/LegalAgreement";
+// import CookiesPolicy from "./CookiesPolicy";
+// import PrivacyPolicy from "./PrivacyPolicy";
+// import LegalAgreement from "./LegalAgreement";
 
 const Main = () => {
   return <main className="main">

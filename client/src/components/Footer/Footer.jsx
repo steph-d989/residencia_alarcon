@@ -55,13 +55,13 @@ const Footer = () => {
 
         {/* Legal Links */}
         <Nav className="legal-links">
-          <Link to="/legal-agreement" className="nav-link">
+          <Link to="/aviso-legal" className="nav-link">
             Aviso Legal
           </Link>
-          <Link to="/privacy-policy" className="nav-link">
+          <Link to="/política-de-privacidad" className="nav-link">
             Política de Privacidad
           </Link>
-          <Link to="/cookies-policy" className="nav-link">
+          <Link to="/política-de-cookies" className="nav-link">
             Política de Cookies
           </Link>
         </Nav>
