@@ -1,81 +1,84 @@
 @import "../utils/variables.scss";
 
 .navbar {
-    padding: 1rem 0;
-    
-    position: fixed; 
-    top: 0;          
-    left: 0;         
-    width: 100%;     
-    z-index: 1000;   
-    background-color: $mint-cream; 
-    padding: 10px;   
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
-    
+  padding: 0.5rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  
+  
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  
+ 
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+
+  .brand-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    .navbar-logo {
+      height: 25px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .brand-name {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: darken($mint-cream, 80%);
+    }
+  }
+
+  .nav-links {
+    gap: 0.75rem;
+
+    a {
+      color: darken($mint-cream, 80%);
+      font-weight: 500;
+      padding: 0.35rem 0.75rem;
+      transition: all 0.2s ease;
+      text-decoration: none;
+
+      &:hover {
+        color: darken($mint-cream, 70%);
+      }
+
+      &.active {
+        color: darken($mint-cream, 70%);
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar {
     .brand-container {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-  
       .navbar-logo {
-        height: 30px;
-        width: auto;
-        object-fit: contain;
+        height: 35px;
       }
-  
+
       .brand-name {
-        font-size: 1.5rem;
-        font-weight: 600;
-        color:darken($mint-cream, 80%);
+        font-size: 1.1rem;
       }
     }
-  
+
     .nav-links {
-      gap: 1rem;
-  
+      margin-top: 0.75rem;
+      gap: 0;
+
       a {
-        color: darken($mint-cream, 80%);
-        font-weight: 600;
-        padding: 0.5rem 1rem;
-        transition: all 0.3s ease;
-        text-decoration: none;
-  
+        padding: 0.5rem 0;
+
         &:hover {
-          color: darken($mint-cream,70%);
-        }
-  
-        &.active {
-          color: darken($mint-cream,70%);
-          font-weight: 600;
+          background-color: rgba(248, 249, 250, 0.5);
         }
       }
     }
   }
-  
-  // Responsive styles
-  @media (max-width: 991px) {
-    .navbar {
-      .brand-container {
-        .navbar-logo {
-          height: 40px;
-        }
-  
-        .brand-name {
-          font-size: 1.2rem;
-        }
-      }
-  
-      .nav-links {
-        margin-top: 1rem;
-        gap: 0;
-  
-        a {
-          padding: 0.75rem 0;
-          
-          &:hover {
-            background-color: #f8f9fa;
-          }
-        }
-      }
-    }
-  }
+}
