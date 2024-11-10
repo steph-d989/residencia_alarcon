@@ -161,7 +161,7 @@ h1 {
   }
 
   .nav-btn {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: darken($mint-cream, 20%);
     border: none;
     padding: 10px;
     border-radius: 50%;
@@ -172,7 +172,7 @@ h1 {
 
     /* Para las flechas al pasar el ratón */
     &:hover {
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: darken($mint-cream, 30%);
     }
 
     /* Para que las flechas estén a la misma altura, no necesitan márgenes adicionales */
