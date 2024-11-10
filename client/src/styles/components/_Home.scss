@@ -21,23 +21,33 @@
     z-index: -2;
   }
 
-  /* Franja translúcida más oscura y que ocupa todo el ancho */
+  /* Franja translúcida con desenfoque en los bordes */
   .text-background {
     position: absolute;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
     width: 100%;
-    padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.1); /* Fondo oscuro y translúcido */
-    backdrop-filter: blur(5px); /* Efecto de desenfoque */
+    padding: 0 2rem 2rem 2rem;
+    background-color: rgba(48, 47, 47, 0.1); /* Fondo oscuro más suave */
+    backdrop-filter: blur(4px); /* Desenfoque en el fondo */
+
+    /* Centrado vertical y horizontal del texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* Borde difuso alrededor del contenedor */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra difusa alrededor del contenedor */
   }
 
   /* Estilos para el título */
   &-title {
     font-size: 4rem;
-    font-weight: 500; /* Peso más ligero */
-    margin-bottom: 2rem; /* Separación mayor entre frases */
+    font-weight: 500;
+    margin-bottom: 2rem;
     color: white;
   }
 
