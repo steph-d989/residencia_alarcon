@@ -6,7 +6,8 @@ import {
   faFacebookF, 
   faTwitter, 
   faInstagram, 
-  faLinkedinIn 
+  faLinkedinIn, 
+  faXTwitter
 } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
@@ -27,10 +28,10 @@ const Footer = () => {
           <li>
             <a 
               href="#" 
-              className="twitter"
-              aria-label="Twitter"
+              className="X"
+              aria-label="X"
             >
-              <FontAwesomeIcon icon={faTwitter} />
+              <FontAwesomeIcon icon={faXTwitter} />
             </a>
           </li>
           <li>
