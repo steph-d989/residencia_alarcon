@@ -41,7 +41,7 @@
         text-decoration: none;
   
         &:hover {
-          color: #3498db;
+          color: darken($mint-cream, 90%);
         }
   
         &.active {
