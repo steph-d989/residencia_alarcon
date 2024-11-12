@@ -29,7 +29,7 @@
     transform: translateY(-50%);
     width: 100%;
     padding: 0 2rem 2rem 2rem;
-    background-color: rgba(48, 47, 47, 0.1); /* Fondo oscuro más suave */
+    background-color: rgba(48, 47, 47, 0.2); /* Fondo oscuro más suave */
     backdrop-filter: blur(4px); /* Desenfoque en el fondo */
 
     /* Centrado vertical y horizontal del texto */
@@ -57,5 +57,23 @@
     margin: 0;
     color: white;
     line-height: 1.6;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-bg {
+    background-image: url('../assets/manos2.jpg');
+  }
+
+  .home-title {
+    font-size: 3rem; /* Reduce font size for small screens */
+  }
+
+  .home-description {
+    font-size: 1.25rem; /* Reduce description font size for small screens */
+  }
+
+  .text-background {
+    padding: 1.5rem; /* Reduce padding for small screens */
   }
 }
