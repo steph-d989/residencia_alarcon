@@ -18,36 +18,44 @@ const Footer = () => {
         <ul className="social-links">
           <li>
             <a 
-              href="#" 
+              href="https://www.facebook.com/residencia.alarcon" 
               className="facebook"
               aria-label="Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faFacebookF} />
             </a>
           </li>
-          <li>
+{/*           <li>
             <a 
               href="#" 
               className="X"
               aria-label="X"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faXTwitter} />
             </a>
-          </li>
+          </li> */}
           <li>
             <a 
-              href="#" 
+              href="https://www.instagram.com/residenciaalarcon/" 
               className="instagram"
               aria-label="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faInstagram} />
             </a>
           </li>
           <li>
             <a 
-              href="#" 
+              href="https://www.linkedin.com/company/residencia-alarc%C3%B3n/" 
               className="linkedin"
               aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
