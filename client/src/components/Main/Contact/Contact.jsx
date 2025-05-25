@@ -14,7 +14,7 @@ const Contact = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.currentTarget;
-    
+
     if (form.checkValidity() === false) {
       event.stopPropagation();
     }
@@ -34,7 +34,7 @@ const Contact = () => {
     <div className="contact-page">
       <Container>
         <h1 className="text-center mb-5">Contacto</h1>
-        
+
         {/* Información de contacto */}
         <Row className="info-section mb-5">
           <Col md={6}>
@@ -58,7 +58,7 @@ const Contact = () => {
               </div>
             </div>
           </Col>
-          
+
           <Col md={6}>
             <div className="map-container">
               <iframe
@@ -80,10 +80,10 @@ const Contact = () => {
             <div className="contact-form">
               <h2 className="text-center mb-4">¡Póngase en contacto si desea ampliar información!</h2>
               <p className="text-center mb-4">
-                La forma más sencilla de ponerse en contacto con nosotros es utilizando este formulario. 
+                La forma más sencilla de ponerse en contacto con nosotros es utilizando este formulario.
                 Nos pondremos en contacto con usted lo antes posible.
               </p>
-              
+
               <Form noValidate validated={validated} onSubmit={handleSubmit}>
                 <Row>
                   <Col md={6}>
@@ -101,7 +101,7 @@ const Contact = () => {
                       </Form.Control.Feedback>
                     </Form.Group>
                   </Col>
-                  
+
                   <Col md={6}>
                     <Form.Group className="mb-3">
                       <Form.Label>Apellido(s) *</Form.Label>
@@ -135,16 +135,21 @@ const Contact = () => {
                       </Form.Control.Feedback>
                     </Form.Group>
                   </Col>
-                  
+
                   <Col md={6}>
                     <Form.Group className="mb-3">
-                      <Form.Label>Teléfono</Form.Label>
+                      <Form.Label>Teléfono *</Form.Label>
                       <Form.Control
+                        required
                         type="tel"
                         name="telefono"
+                        pattern="^[0-9]{9}$"
                         value={formData.telefono}
                         onChange={handleChange}
                       />
+                      <Form.Control.Feedback type="invalid">
+                        Por favor, ingrese un número de teléfono válido.
+                      </Form.Control.Feedback>
                     </Form.Group>
                   </Col>
                 </Row>
