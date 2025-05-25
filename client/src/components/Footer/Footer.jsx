@@ -4,10 +4,8 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faFacebookF, 
-  faTwitter, 
   faInstagram, 
-  faLinkedinIn, 
-  faXTwitter
+  faLinkedinIn
 } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
@@ -27,17 +25,6 @@ const Footer = () => {
               <FontAwesomeIcon icon={faFacebookF} />
             </a>
           </li>
-{/*           <li>
-            <a 
-              href="#" 
-              className="X"
-              aria-label="X"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faXTwitter} />
-            </a>
-          </li> */}
           <li>
             <a 
               href="https://www.instagram.com/residenciaalarcon/" 
