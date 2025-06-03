@@ -4,7 +4,7 @@
   text-align: center;
 
   .introduction {
-    margin: 20px 10rem 30px 10rem;
+    margin: 20px 2rem 30px 2rem;
 
     h1 {
       text-align: center;
@@ -26,6 +26,11 @@
       margin-bottom: 1.5rem;
       line-height: 2rem;
     }
+
+    @media (min-width: 1024px) {
+      margin: 20px 10rem 30px 10rem;
+    }
+    
   }
 
   .indicators {
